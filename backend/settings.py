@@ -14,7 +14,7 @@ from pathlib import Path
 from re import S
 import os
 import dotenv # <- New
-from dotenv import load_dotenv, find_dotenv
+# from dotenv import load_dotenv, find_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # with open('secret_key.txt') as f:
 #     SECRET_KEY = f.read().strip()
 
-load_dotenv(find_dotenv())
+# load_dotenv(find_dotenv())
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
